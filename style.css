@@ -1,0 +1,149 @@
+body{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00051a;
+
+}
+
+.holi{
+    margin-top:100px ;
+    text-align: center;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.holi span{
+    margin-bottom: -2rem;
+    font-size: 3rem;
+
+
+}
+
+.holi h1{
+    margin: 0;
+    font-size: 13rem;
+
+}
+
+.colors{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.colors span{
+
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    filter: blur(25px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.colors span:nth-child(1){
+    background: red;
+    animation-name: circle1;
+}
+
+.colors span:nth-child(2){
+    background:green;
+    animation-name: circle2;
+    animation-delay: .5s;
+}
+
+.colors span:nth-child(3){
+    background: purple;
+    animation-name: circle3;
+    animation-delay: 1s;
+}
+
+.colors span:nth-child(4){
+    background:yellow;
+    animation-name: circle4;
+    animation-delay: 1.5s;
+}
+
+.colors span:nth-child(5){
+    background: pink;
+    animation-name: circle5;
+    animation-delay: 2s;
+}
+
+.colors span:nth-child(6){
+    background: orangered;
+    animation-name: circle6;
+    animation-delay: 2.5s;
+}
+
+
+.colors span:nth-child(7){
+    background: blue;
+    animation-name: circle7;
+    animation-delay: 3s;
+}
+
+.colors span:nth-child(8){
+    background: brown;
+    animation-name: circle8;
+    animation-delay: 3.5s;
+}
+
+@keyframes circle1{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(0,-450px) scale(6); opacity:0;}
+}
+
+@keyframes circle2{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(300px,-450px) scale(6); opacity:0;}
+}
+
+@keyframes circle3{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(-300px,-450px) scale(6); opacity:0;}
+}
+
+@keyframes circle4{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(200px,-500px) scale(6); opacity:0;}
+}
+
+@keyframes circle5{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(-200px,-400px) scale(6); opacity:0;}
+}
+
+@keyframes circle6{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(350px,-450px) scale(6); opacity:0;}
+}
+
+@keyframes circle7{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(350px,-450px) scale(6); opacity:0;}
+}
+
+@keyframes circle8{
+    0%{transform:translate(0,0) scale(0);}
+    70%{opacity: 1;}
+    100%{transform: translate(350px,-450px) scale(6); opacity:0;}
+}
